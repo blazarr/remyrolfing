@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'CopperplateGothicBT-Roman';
+  src: url('CopperplateGothicBT-Roman.eot?#iefix') format('embedded-opentype'),  url('CopperplateGothicBT-Roman.otf')  format('opentype'),
+	     url('CopperplateGothicBT-Roman.woff') format('woff'), url('CopperplateGothicBT-Roman.ttf')  format('truetype'), url('CopperplateGothicBT-Roman.svg#CopperplateGothicBT-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

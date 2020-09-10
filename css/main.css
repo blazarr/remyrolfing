@@ -1,0 +1,300 @@
+/*
+* RemyRolfing 
+* Copyright 2017, Spencer Reiter
+* 02/19/2017
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Fonts
+- Layout
+- Header
+- Navigation
+- Content
+- Footer
+*/
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: 'CopperplateGothicBT-Roman';
+  src: url('fonts/CopperplateGothicBT-Roman/CopperplateGothicBT-Roman.eot?#iefix') format('embedded-opentype'),  url('fonts/CopperplateGothicBT-Roman/CopperplateGothicBT-Roman.otf')  format('opentype'),
+	     url('fonts/CopperplateGothicBT-Roman/CopperplateGothicBT-Roman.woff') format('woff'), url('fonts/CopperplateGothicBT-Roman/CopperplateGothicBT-Roman.ttf')  format('truetype'), url('fonts/CopperplateGothicBT-Roman/CopperplateGothicBT-Roman.svg#CopperplateGothicBT-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Layout Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* Header Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  padding: 10px 0;
+  background-color:#f2d0a4;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+#logo-img {
+  height: 8rem;
+  width: 6rem;
+}
+
+#logo-name {
+  font-family:'CopperplateGothicBT-Roman', serif;
+  font-size: 4rem;
+  line-height: 0.7;
+  display: inline-block;
+}
+
+/* Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  padding: 10px 0;
+  background-color: #ffeccc;
+}
+
+nav a {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+/* Index Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+main .appointments {
+  background-color: #fff;
+}
+
+main .appointments .container {
+  height: 100%;
+  background-image: url('../images/rolfboy.svg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position-x: center;
+}
+
+main .appointments .container {
+  padding: 25px 0 40px 0;
+}
+
+main .appointments .container:after{
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  background-color:#fff; /** Change This Value ***/
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+main .what-to-expect {
+  background-color: #efe6dd;
+}
+main .what-to-expect .container {
+  padding: 50px 0 40px 0;
+}
+main .what-to-expect .container:after{
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  background-color:#efe6dd; /** Change This Value ***/
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+main .rolfing {
+  background-color: #c8d6af
+}
+main .rolfing .container {
+  padding: 50px 0;
+}
+
+main .rolfing .container:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  background-color:#efe6dd; /** Change This Value ***/
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+main .video {
+  background-color: #efe6dd;
+}
+main .video .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 0;
+}
+
+#structural-video {
+  width: 300px;
+  height: 300px;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  #structural-video {
+    width: 400px;
+    height: 315px;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  #structural-video {
+    width: 550px;
+    height: 315px;
+  }
+}
+
+/* About Remy
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+main .about-remy .container {
+  padding: 25px 0 25px 0;
+}
+
+main .about-remy .container {
+  height: 100%;
+  background-image: url('../images/rolfboy.svg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position-x: center;
+}
+
+/* Contact Remy
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+main.contact-remy {
+  background-color: #efe6dd;
+}
+
+main .contact-remy-offices {
+  background-color:#fff;
+}
+
+main .contact-remy-offices .container {
+  padding-bottom:15px;
+}
+
+main .contact-remy-hours {
+  background-color: #efe6dd;
+}
+
+main .contact-remy-hours table tr td {
+  border-bottom: 1px solid #bbb
+}
+
+.contact-area {
+  font-size:2rem;
+  margin-top: 15px;
+}
+
+.contact-header {
+  font-size: 3rem;
+}
+
+/* Pricing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.event {
+  width: 300px;
+  height: 105px;
+  background: #fff;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.event > span {
+  display: block;
+  width: 35px;
+  background: #232323;  
+  position: relative;
+  top: 17px;
+  left: -15px;
+  
+  /* Text */
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 7px;
+  text-align: right;
+}
+.event > .info {
+  display: inline-block;
+  position: relative;
+  top: -7px;
+  left: 43px;
+  
+  /* Text */
+  color: #232323;
+
+}
+.event > .info:first-line {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  font-weight: 700;
+}
+.event > .price {
+  display: inline-block;
+  width: 60px;
+  position: relative;
+  top: -33px;
+  left: 80px; 
+  
+  /* Text */
+  color: #E35354;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+
+/* Footer Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color:#f2d0a4;
+}
